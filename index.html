@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-A-Sketch</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Etch-A-Sketch</h1>
+    </div>
+
+    <div class="main">
+
+        <div class="controlPanel">
+            <button class="button button1" id="color" onclick="setModeBlack()" >Black</button>
+            <button class="button button1" id="color" onclick="setModeRainbow()" >Rainbow</button>
+            <button class="button button1" id="erase" onclick="setModeErase()" >Erase</button>
+            <button class="button button1" id="clear" onclick="clearBoard()">Clear</button>
+            <input type="range" min="1" max="100" value="16" class="slider" id="myRange">
+            <p>Size: <span id="gridValue">16x16</span></p>
+        </div>
+
+
+
+        <div class="gameSection">
+
+            <div class="gameGrid" id="gameGrid">
+                <!-- game board is generted here by javascript -->
+
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+
+
+</html>
